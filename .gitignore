@@ -1,0 +1,25 @@
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependency directories (not needed for this vanilla HTML project)
+node_modules/
+
+# Build output
+dist/
+build/
