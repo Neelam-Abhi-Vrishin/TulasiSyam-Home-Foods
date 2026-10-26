@@ -1365,23 +1365,39 @@ a.contact-item:hover .contact-arrow {
   object-fit: contain;
 }
 
-/* Location QR code */
-.location-qr-link {
+/* Our Menu */
+.menu-card-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-card-image {
   display: block;
-  width: min(100%, 180px);
-  margin-top: 18px;
-  padding: 8px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   background: #fff;
   border: 2px solid var(--gold);
   border-radius: 10px;
   box-shadow: 0 6px 18px rgb(0 0 0 / 10%);
 }
 
-.location-qr-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+.menu-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+/* Google Feedback */
+.feedback-button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 14px;
+  text-align: center;
 }
 
 .address-note {
@@ -1391,7 +1407,18 @@ a.contact-item:hover .contact-arrow {
 }
 
 @media (max-width: 480px) {
-  .location-qr-link {
-    width: min(100%, 180px);
+  .menu-card-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card-actions .button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .feedback-button {
+    width: 100%;
+    max-width: 250px;
   }
 }
